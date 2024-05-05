@@ -1,4 +1,5 @@
 // script.js
-document.getElementById('learnMoreBtn').addEventListener('click', function() {
-    document.querySelector('.features').scrollIntoView({ behavior: 'smooth' });
+document.querySelector('button').addEventListener('click', function() {
+    const featuresSection = document.getElementById('features');
+    featuresSection.scrollIntoView({ behavior: 'smooth' });
 });
