@@ -1,4 +1,4 @@
 // script.js
-function register() {
-    window.location.href = 'https://www.example.com/signup';
-}
+document.getElementById('learnMoreBtn').addEventListener('click', function() {
+    document.querySelector('.features').scrollIntoView({ behavior: 'smooth' });
+});
