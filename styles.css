@@ -2,25 +2,23 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #f4f4f4;
 }
 
 nav {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background: #6c5ce7; /* Deep violet background */
+    color: white;
+    padding: 12px 20px;
     text-align: center;
 }
 
 .hero {
-    background: #007BFF;
+    background: linear-gradient(135deg, #0984e3, #74b9ff);
     color: white;
-    padding: 20px;
+    padding: 50px 20px;
     text-align: center;
-}
-
-.hero h2 {
-    margin: 0 0 10px;
 }
 
 .features {
@@ -28,38 +26,52 @@ nav {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #f4f4f4;
 }
 
 .feature {
     padding: 20px;
     background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: none;
+    border-radius: 8px;
     margin: 10px;
     width: 90%; /* Responsive width */
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background: #333;
+    padding: 12px;
+    background: #6c5ce7;
     color: white;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #22a6b3;
+    padding: 12px 25px;
+    background-color: #e17055; /* Coral */
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0984e3;
+    background-color: #d63031; /* Darker coral */
+}
+
+button.cta-button {
+    font-size: 18px;
+    padding: 15px 30px;
+    background: #00b894; /* Mint green */
 }
 
 @media (min-width: 600px) {
